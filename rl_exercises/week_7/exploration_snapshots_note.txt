@@ -1,0 +1,23 @@
+Exploration Snapshots: RND DQN
+==============================
+
+I generated trajectory plots for my RND DQN agent at three distinct points during training: early (100 steps), middle (1000 steps), and late (10000 steps).
+
+**Observations:**
+
+- **Early training (100 steps):**  
+  The agent’s trajectory is highly random and dispersed, with no apparent strategy. At this stage, the agent explores the environment in an unstructured manner, which is expected given its limited experience.
+
+- **Mid training (1000 steps):**  
+  The agent begins to exhibit more purposeful movement. There are instances where it attempts to approach the landing pad, although exploratory behavior remains prominent. The influence of the RND bonus is evident, as the agent continues to seek out novel states.
+
+- **Late training (10000 steps):**  
+  The agent’s trajectory becomes more focused and concentrated around the landing pad. Its movements are less random, indicating that it has learned a more effective policy. Nevertheless, some exploratory actions persist, likely due to the continued effect of the RND bonus.
+
+**Analysis:**
+
+The Random Network Distillation (RND) mechanism significantly enhances the agent’s exploratory behavior, particularly during the early and middle stages of training. This increased exploration enables the agent to discover a wider range of strategies and environmental states. As training progresses, the agent’s behavior becomes increasingly goal-directed, focusing on task completion while still maintaining a degree of curiosity. The trajectory snapshots clearly illustrate how RND shapes the agent’s exploration dynamics over time, facilitating both learning and adaptation.
+
+**Conclusion:**
+
+Visualizing the agent’s trajectories at different training stages provides valuable insight into the impact of RND on exploration. The agent transitions from random exploration to more structured and purposeful behavior, demonstrating the effectiveness of RND in

@@ -1,0 +1,14 @@
+RND DQN vs Baseline DQN: My Thoughts
+=====================================
+
+After training both the RND DQN and the baseline DQN (epsilon-greedy) on LunarLander-v3, I noticed some interesting differences:
+
+- The baseline DQN often gets stuck and doesn't explore much, so its rewards stay low or fluctuate a lot. It seems to have trouble finding better strategies just by random exploration.
+- The RND DQN, on the other hand, sometimes manages to get higher rewards. This is probably because the intrinsic reward from RND encourages it to try new things and visit states it hasn't seen before.
+- However, RND isn't a magic bullet—sometimes it can be unstable, especially if the bonus for exploration is too high. It needs some tuning to work well.
+
+In my opinion, RND is a good match for DQN in environments where it's hard to explore or where rewards are sparse. In LunarLander-v3, it helps the agent break out of ruts and try new approaches, but you have to balance the exploration bonus so it doesn't just chase novelty forever.
+
+Overall, RND makes the agent more curious and willing to try new things, which can lead to better learning. But for environments where rewards are already dense, the difference might not be as big.
+
+To really see the difference, it would help to look at where the agent goes during training (like state visitation plots) or snapshots of its behavior at different stages.

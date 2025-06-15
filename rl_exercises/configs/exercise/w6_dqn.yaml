@@ -2,7 +2,7 @@
 defaults:
   - ../agent: dqn
 
-env_name: LunarLander-v2
+env_name: LunarLander-v3
 max_episode_length: 1000
 
 buffer_cls: ReplayBuffer
